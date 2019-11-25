@@ -8,14 +8,3 @@ for member in members :
         sys.exit()
 
 print("Who are you?")
-
-
-# real_egoing = "egoing"
-# real_k8805 = "k8805"
-#
-# if real_egoing == in_str :
-#     print("Hello!, egoing")
-# elif real_k8805 == in_str :
-#     print("Hello!, k8805")
-# else :
-#     print("Who are you?")
