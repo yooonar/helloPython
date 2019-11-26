@@ -5,5 +5,5 @@ def solution(s):
         answer = s[(l//2)-1:(l//2)+1] # str[2:3] 3
     else :
         answer = s[(l//2):(l//2)+1]
-
+#test
     return answer
