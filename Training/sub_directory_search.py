@@ -30,6 +30,6 @@ def search(dirname) :
 
     except PermissionError :
         # 퍼미션 오류나도 오류메시지 안나오도록 패스
-        pass                
+        pass
 
 search("/Users/yoonar/Documents/study/helloPython/Training")
