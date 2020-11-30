@@ -12,12 +12,10 @@ def search(dirname) :
             # dirname == 입력받은 값 == /Users/yoonar/Documents/study/helloPython/Training
             # filename == 해당 경로의 모든 파일 이름
             full_filename = os.path.join(dirname, filename)
-
             # print(full_filename) # 전체 파일 경로
             # output: /Users/yoonar/Documents/study/helloPython/Training/gugu.py
-            
-            ext = os.path.splitext(full_filename)
 
+            ext = os.path.splitext(full_filename)
             # print(ext) # 확장자 추출하기 위해 문자열 자르기
             # output: ('/Users/yoonar/Documents/study/helloPython/Training/gugu', '.py')
 
@@ -25,7 +23,7 @@ def search(dirname) :
             if os.path.isdir(full_filename) :
                 search(full_filename)
 
-            # full_filename 이 파일이라면
+            # full_filename 이 파일이라면?
             else :
                 if ext[-1] == '.py' : # 맨 끝에 있는 확장자가 .py 이냐?
                     print(full_filename)
