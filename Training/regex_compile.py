@@ -62,16 +62,16 @@ python three"""
 # ^python\s\w+ : 맨 처음(^) 에 python 이라는 글자가 나오고 공백(\s) 이 나오고 그 다음 알파벳 | 숫자 | _ 중의 한 문자(\w)가 1개 이상 반복되는 것
 
 # 3-1. 여러줄 중 맨 처음 나오는 문자열을 매칭하려는 경우
-multiline1 = re.compile('^python\s\w+')
-print(" 3-1. ('^python\s\w+') -> findall(data) :\n ", multiline1.findall(data))
+multiline1 = re.compile('^python\\s\\w+')
+print(" 3-1. ('^python\\s\\w+') -> findall(data) :\n ", multiline1.findall(data))
 # output: ['python one']
 
 # 3-2. 여러줄 중 맨 처음 나오는 문자열을 매칭하려는 경우 - MULTILINE
-multiline2 = re.compile('^python\s\w+', re.MULTILINE)
-print("\n 3-2. ('^python\s\w+', re.MULTILINE) -> findall(data) :\n ", multiline2.findall(data))
+multiline2 = re.compile('^python\\s\\w+', re.MULTILINE)
+print("\n 3-2. ('^python\\s\\w+', re.MULTILINE) -> findall(data) :\n ", multiline2.findall(data))
 # output: ['python one', 'python two', 'python three']
 
 # 3-3. 여러줄 중 맨 처음 나오는 문자열을 매칭하려는 경우 - MULTILINE 의 약어 M
-multiline3 = re.compile('^python\s\w+', re.M)
-print("\n 3-3. ('^python\s\w+', re.M) -> findall(data) :\n ", multiline3.findall(data))
+multiline3 = re.compile('^python\\s\\w+', re.M)
+print("\n 3-3. ('^python\\s\\w+', re.M) -> findall(data) :\n ", multiline3.findall(data))
 # output: ['python one', 'python two', 'python three']
